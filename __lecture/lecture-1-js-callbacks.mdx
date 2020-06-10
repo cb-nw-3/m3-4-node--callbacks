@@ -7,27 +7,32 @@
 ---
 
 _Synchronous_: Things happens one at a time.
+and one after the other.
 
 ---
 
 _Asynchronous_: Multiple things happen at the same time.
+do multiple thing at the same time.
 
 ---
 
 ### Example
 
 An app that fetches 2 resources from the network, and then combines the results into a final (needed) result.
+network request, its able to multitask
 
 ---
 
 <img src='./assets/async_sync.png' style='width: 100%;' />
-
+black circle code start doing stuff
+blue line Done
+red line blocked
 ---
 
 ### Important Distinction
 
 In a _synchronous_ model, waiting for actions to finish is **implicit**, but in an _asynchronous_ model, it is **explicit**.
-
+when you have code in synchronous model
 ---
 
 Synchronous === implicit control
@@ -47,10 +52,21 @@ _Examples of operations that might take time?_
 ## Callbacks
 
 What is a callback?
+arr.forEach(item) => {
+    console.log(item);
+})
+1
+2
+3
+function hello() {}
+arr.forEach(hello)
+function hello() {console.log('hi)}
+arr.forEach(hello)
 
 ---
 
 - A callback is a function that is to be executed, or _called_ after another function has finished executing.
+passing it whenever the function deside
 
 - Any functions that is passed as an argument to another function is a callback function.
 
@@ -116,6 +132,9 @@ writeStory('traveling to Mars', function() {
 ---
 
 Have we used callbacks in any of our code to date?
+setInterval
+setTimeout
+eventListener
 
 ---
 
@@ -139,6 +158,15 @@ function tellWorld(message, callback) {
 ---
 
 Sooo.... Is a callback _synchronous_ or _asynchronous_?
+
+both, depend on how you use it.
+
+function log() { console.log('yes I am running):}
+synchronous
+with forEach
+
+asynchronous
+setTimeout
 
 ---
 
