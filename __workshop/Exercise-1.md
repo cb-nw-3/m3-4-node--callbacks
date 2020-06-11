@@ -1,8 +1,8 @@
 # Questions
 
-**With a partner**, answer these questions as completely as possible. Feel free to look at past lecture notes, the web, anything. 
+**With a partner**, answer these questions as completely as possible. Feel free to look at past lecture notes, the web, anything.
 
-Take the time to explain it to each other. 
+Take the time to explain it to each other.
 
 The power of this exercise is in the act of _formulating_ and _explaining_ the concepts to someone else (your teammate).
 
@@ -14,6 +14,9 @@ Only move on to the next question when you have enough detail that you would be 
 
 ```
 // Answer here
+get /
+  render the html
+  should have a form
 
   .get('/', (req, res) => {
     load homepage
@@ -110,28 +113,3 @@ Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? E
 // Answer here
 
 ```
-
-## Nine - `styles.scss`
-
-What are lines `2` to `7` for this file? Where are these values being used? Take a look at `_homepage.scss` as well? What do you notice?
-
-```
-// Answer here
-
-```
-
-## Ten - `_homepage.scss`
-
-Line `16`. See if by searching the Sass documentation, you can determine what _exactly_ is going on here. That `#{}` notation very specific to this use-case. Why?
-
-```
-// Answer here
-
-```
-
-
-
-
-
-
-
