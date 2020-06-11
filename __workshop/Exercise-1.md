@@ -67,7 +67,7 @@ Line 1 is an empty array of items, it is used in handleHomePage and handleFormDa
 Why is there `redirect` on line `11`;
 
 ```
-Redirect is found here in the event that item is recognized by the bodyParser and it allocates a value of true, then it would redirect to a specified pathway, in this case, the homepage; but if it was negative, then the handle404 would be triggered and send an error message.
+Redirect is found here in the event that an item is recognized by the bodyParser and it allocates a value of true, then it would redirect to a specified pathway, in this case, the homepage; but if it was negative, then the handle404 would be triggered and send an error message.
 
 ```
 
@@ -76,7 +76,7 @@ Redirect is found here in the event that item is recognized by the bodyParser an
 The `handle404` function is a more complex than we've seen thus far, what is the extra functionality for?
 
 ```
-
+The handle404 function is given more complexity in the sense that all the if statements go down in complexity of responding: responds with HTML is when it is able to load an HTML file to respond that a 404 has happened; responds with json is in the case that HTML does not work and it can show a message; finally the default will show a simple message on the browser saying not found.
 
 ```
 
