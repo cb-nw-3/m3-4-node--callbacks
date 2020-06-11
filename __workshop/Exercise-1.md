@@ -14,6 +14,7 @@ Only move on to the next question when you have enough detail that you would be 
 
 ```
 // Answer here
+<<<<<<< HEAD
 require dependencies /morgan /express to create a server
 create endpoints that lead to html/partials
 
@@ -25,7 +26,11 @@ create endpoints that lead to html/partials
   .get('*', handle404) // create an endpoint for 404
 
   .listen(PORT...) // set the port for your live server
+||||||| e699957
+=======
 
+
+  should have list of items
 ```
 
 ## Two - `server.js`
@@ -50,7 +55,7 @@ the use case for the app will parse for input that are in json format, with no a
 
 ## Three - `server.js`
 
-Look at lines `23` and `24`. Explain the methods used. How are they different? What are the usecases for each?
+Look at lines `26` and `24`. Explain the methods used. How are they different? What are the usecases for each?
 
 ```
 // Answer here
@@ -132,6 +137,8 @@ For todoInput.ejs, this file contains the `<form>` tags with the POST method lin
 
 ```
 
+<<<<<<< HEAD
+
 ## Nine - `styles.scss`
 
 What are lines `2` to `7` for this file? Where are these values being used? Take a look at `_homepage.scss` as well? What do you notice?
@@ -168,3 +175,27 @@ width: calc(#{$content-width} - 60px);
 the variable content-width has the value of 400px, but it needs to be in an expression
 for it to be calculated in the calc function
 ```
+
+||||||| e699957
+
+## Nine - `styles.scss`
+
+What are lines `2` to `7` for this file? Where are these values being used? Take a look at `_homepage.scss` as well? What do you notice?
+
+```
+// Answer here
+
+```
+
+## Ten - `_homepage.scss`
+
+Line `16`. See if by searching the Sass documentation, you can determine what _exactly_ is going on here. That `#{}` notation very specific to this use-case. Why?
+
+```
+// Answer here
+
+```
+
+=======
+
+> > > > > > > parent/master
