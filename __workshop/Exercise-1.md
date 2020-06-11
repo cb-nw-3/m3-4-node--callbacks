@@ -1,8 +1,8 @@
 # Questions
 
-**With a partner**, answer these questions as completely as possible. Feel free to look at past lecture notes, the web, anything. 
+**With a partner**, answer these questions as completely as possible. Feel free to look at past lecture notes, the web, anything.
 
-Take the time to explain it to each other. 
+Take the time to explain it to each other.
 
 The power of this exercise is in the act of _formulating_ and _explaining_ the concepts to someone else (your teammate).
 
@@ -13,7 +13,6 @@ Run the app. Write out the steps, the _pseudo code_, required to create this app
 Only move on to the next question when you have enough detail that you would be able to start coding it yourself.
 
 ```
-// Answer here
 
 ```
 
@@ -45,6 +44,7 @@ Line `6`. That's new. What do you think it's for?
 
 ```
 // Answer here
+declaring function as a variable
 
 ```
 
@@ -64,7 +64,7 @@ Why is there `redirect` on line `11`;
 ```
 // Answer here
 
-``` 
+```
 
 ## Seven - `handlers.js`
 
@@ -101,10 +101,3 @@ Line `16`. See if by searching the Sass documentation, you can determine what _e
 // Answer here
 
 ```
-
-
-
-
-
-
-
