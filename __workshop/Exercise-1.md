@@ -13,8 +13,16 @@ Run the app. Write out the steps, the _pseudo code_, required to create this app
 Only move on to the next question when you have enough detail that you would be able to start coding it yourself.
 
 ```
+<<<<<<< HEAD
 get the homepage, render homepage with partials , have an object to store data that is being inputted and when the item is submitted to the object, then item is POSTED to the homepage in order to view current items list and the input on the input tag is DELETED and the form is ready to accept any new items.
+=======
+// Answer here
+get /
+  render the html
+  should have a form
+>>>>>>> parent/master
 
+  should have list of items
 ```
 
 ## Two - `server.js`
@@ -83,24 +91,6 @@ The handle404 function is given more complexity in the sense that all the if sta
 ## Eight - `ejs`
 
 Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? Explain line-by-line...
-
-```
-// Answer here
-
-```
-
-## Nine - `styles.scss`
-
-What are lines `2` to `7` for this file? Where are these values being used? Take a look at `_homepage.scss` as well? What do you notice?
-
-```
-// NOT TO BE ANSWERED AS PER JOSH //
-
-```
-
-## Ten - `_homepage.scss`
-
-Line `16`. See if by searching the Sass documentation, you can determine what _exactly_ is going on here. That `#{}` notation very specific to this use-case. Why?
 
 ```
 // Answer here
