@@ -110,7 +110,7 @@ Why is there `redirect` on line `11`;
 
 ```
 // Answer here
-When posting the data in the server, it tells the server to tell the browser to return to home and show the changes
+When posting the data in the server, it tells the server to return to home and show the changes
 
 ```
 
@@ -121,6 +121,11 @@ The `handle404` function is a more complex than we've seen thus far, what is the
 ```
 // Answer here
 
+req.accepts(types)
+Checks if the specified content types are acceptable
+
+In this case it checks if we are reciving HTML and then renders the 404 page
+
 ```
 
 ## Eight - `ejs`
@@ -130,6 +135,26 @@ Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? E
 ```
 // Answer here
 
+This is the homepage.ejs
+<%- include('../partials/header') %> ==>  imports the header from partials/header.ejs
+<div class='input-container'>  ==> creates a div with the class input-container
+    <%- include('../partials/todoInput') %> ==> imports the todoInput from partials/todoInputs.ejs
+</div> ==> closes the div 
+<div class='content'> ==> open a new div class = content
+    <ul class='todo-list'> ==> creates a ul with the class todo-list
+        <% items.forEach(item => { %> => run a loop, for each element of items
+            <li class='todo-list--item'><%= item %></li>  ==> create a li with the class todo-list--items with the item given by the loop
+        <% }); %>  ==> close the loop
+    </ul>  ==> close the ul
+</div> close the div
+<%- include('../partials/footer') %> ==>  imports the footer from partials/footer.ejs
+
+this is the todoInputs,ejs
+<form method='POST' action='/form-data'>  ==> defines a form with post method and tell the browser to go to /form-data endpoint
+    <label for='item'>TODO Item</label> ==>  creates the label 
+    <input type='text' name='item' placeholder='Item Description' /> => creates and input type text and name item 
+    <button type='submit'>Submit</button>  ==> creates a button type submit
+</form> =>  close the form 
 ```
 
 ## Nine - `styles.scss`
