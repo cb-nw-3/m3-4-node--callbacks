@@ -1,7 +1,9 @@
 # Questions
 
 **With a partner**, answer these questions as completely as possible. Feel free to look at past lecture notes, the web, anything.
+
 Take the time to explain it to each other.
+
 The power of this exercise is in the act of _formulating_ and _explaining_ the concepts to someone else (your teammate).
 
 ## One
@@ -45,7 +47,7 @@ body-parser extract the entire body portion of an incoming request stream and ex
 
 ## Three - `server.js`
 
-Look at lines `23` and `24`. Explain the methods used. How are they different? What are the usecases for each?
+Look at lines `26` and `24`. Explain the methods used. How are they different? What are the usecases for each?
 
 ```
 // Answer here
