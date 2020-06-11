@@ -13,14 +13,7 @@ Run the app. Write out the steps, the _pseudo code_, required to create this app
 Only move on to the next question when you have enough detail that you would be able to start coding it yourself.
 
 ```
-<<<<<<< HEAD
 get the homepage, render homepage with partials , have an object to store data that is being inputted and when the item is submitted to the object, then item is POSTED to the homepage in order to view current items list and the input on the input tag is DELETED and the form is ready to accept any new items.
-=======
-// Answer here
-get /
-  render the html
-  should have a form
->>>>>>> parent/master
 
   should have list of items
 ```
