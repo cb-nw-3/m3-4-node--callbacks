@@ -13,8 +13,7 @@ const handleFormData = (req, res) => {
 
 const handle404 = (req, res) => {
     res.status(404);
-    
-    // respond with html page
+        // respond with html page
     if (req.accepts('html')) {
         res.render('pages/fourOhFour', { path: req.originalUrl });
         return;
@@ -22,6 +21,7 @@ const handle404 = (req, res) => {
     
     // respond with json
     if (req.accepts('json')) {
+        console.log("encounterting empyt json")
         res.send({ error: 'Not found' });
         return;
     }

@@ -7,6 +7,8 @@ const { handleHomePage, handleFormData, handle404 } = require('./handlers');
 
 const PORT = process.env.PORT || 8000;
 
+console.log("hello");
+
 express()
   .use(function (req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
