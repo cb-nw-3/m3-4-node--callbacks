@@ -48,6 +48,8 @@ _Examples of operations that might take time?_
 
 What is a callback?
 
+//it is a function that wont be called by the programmer.like an event listener, the function in the listener is called by the action, not the programmer.
+
 ---
 
 - A callback is a function that is to be executed, or _called_ after another function has finished executing.
@@ -80,7 +82,11 @@ setTimeout(function() {
 }, 2000);
 console.log('do third thing');
 ```
+Output:
 
+//do first thing
+//do third thing
+//do second thing
 ---
 
 ### Important
@@ -112,7 +118,10 @@ writeStory('traveling to Mars', function() {
     alert('Done! Time to submit it.');
 });
 ```
+first alert: Begin writing a story about traveling to Mars
+second alert: Done ! Time to submit it
 
+the second alert pops immidietly after the first one.
 ---
 
 Have we used callbacks in any of our code to date?
@@ -140,6 +149,7 @@ function tellWorld(message, callback) {
 
 Sooo.... Is a callback _synchronous_ or _asynchronous_?
 
+both, it depends on how you use it. In a forEach, it's synchronous for example.
 ---
 
 Well that depends...
@@ -152,5 +162,22 @@ Well that depends...
 
 
 <!-- [next](../lecture-0-our-progress) -->
+
+EXPRESS METHODS:
+
+    You can use form METHODS
+    You can use method = "GET" in a form and POST
+    GET is used to retrive information and the info is used in URL. Not secure
+    POST, additional data is sent with the request
+    PATCH (edit something)
+    PUT (remplace one thing with anoter)
+    DELETE (remove an existing thing)
+
+    ^^ these are all semantic, they have the same behaviour as GET but inform us on what they do
+
+
+    <form method='POST' action='/login'> //cause you create a new session
+    <form method='DELETE' action='/logout'> //cause you delete the session
+
 
 [More on Express routing](https://expressjs.com/en/guide/routing.html)
