@@ -103,6 +103,8 @@ The `handle404` function is a more complex than we've seen thus far, what is the
 ```
 // Answer here
 
+  The extra functionality is there to handle the specified media type. It returns different errors depending on the type of file received.
+
 ```
 
 ## Eight - `ejs`
@@ -112,4 +114,14 @@ Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? E
 ```
 // Answer here
 
+  homepage.ejs
+    - render the header template from folder partials
+    - render the input field template on the homepage
+    - loop through all items on server 
+    - create list element for each item
+    - render the footer template
+
+  toDoInput.ejs
+    - create a form with a POST request and we send the form to /form-data
+    - create label / input / and button to make everything work
 ```
