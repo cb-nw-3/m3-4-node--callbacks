@@ -14,11 +14,13 @@ Only move on to the next question when you have enough detail that you would be 
 
 ```
 // Answer here
-get /
-  render the html
-  should have a form
 
-  should have list of items
+We need the dependencies in the server.js and also the functions related to the endpoints.
+
+.get('/', handleHomepage) // This is the setup for the home page.
+.post()                   // This post data to the "TODO list".
+get('*', handle404)       // This redirects anything not defined.
+
 ```
 
 ## Two - `server.js`
@@ -30,7 +32,11 @@ We have a new module in there, `body-parser` that is required on line `4`. What 
 _The NPM site might be a good place to start. Feel free to provide links as relevant._
 
 ```
-// Answer here
+Basically what the body-parser is which allows express to read the body and then parse that into a Json object that we can understand. // Taken from Stack-Overflow
+
+It is used on line 21
+
+Source: https://www.npmjs.com/package/body-parser#options-2
 
 ```
 
@@ -39,7 +45,8 @@ _The NPM site might be a good place to start. Feel free to provide links as rele
 Look at lines `26` and `24`. Explain the methods used. How are they different? What are the usecases for each?
 
 ```
-// Answer here
+(line 26) // This renders "homepage.ejs".
+(line 27) // This adds new data from our array and displays it.
 
 ```
 
@@ -48,7 +55,7 @@ Look at lines `26` and `24`. Explain the methods used. How are they different? W
 Line `6`. That's new. What do you think it's for?
 
 ```
-// Answer here
+// This line imports js code from the handers.js file, this makes our "server.js" file cleaner, by having our functions on another JS file.
 
 ```
 
@@ -57,7 +64,7 @@ Line `6`. That's new. What do you think it's for?
 Explain line `1`. Where, why and how is `items` being used?
 
 ```
-// Answer here
+// It is an empty array from which we add new item from question "three".
 
 ```
 
@@ -66,7 +73,7 @@ Explain line `1`. Where, why and how is `items` being used?
 Why is there `redirect` on line `11`;
 
 ```
-// Answer here
+// Because it needs to be redirected to the homepage for display.
 
 ```
 
@@ -75,7 +82,7 @@ Why is there `redirect` on line `11`;
 The `handle404` function is a more complex than we've seen thus far, what is the extra functionality for?
 
 ```
-// Answer here
+// This is different from the previous workshop. This accept HTML and JSON file, and returns the appropriate error message.
 
 ```
 
@@ -84,6 +91,8 @@ The `handle404` function is a more complex than we've seen thus far, what is the
 Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? Explain line-by-line...
 
 ```
-// Answer here
+homepage.ejs // A list of items that were entered by the viewer is pushed into the array from "question 5" array which is rendered in the homepage.
+​
+todoInput.js // This file contains the "<form>" tags with the POST method which is required in "server.js".
 
 ```
