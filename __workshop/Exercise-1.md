@@ -31,6 +31,7 @@ Only move on to the next question when you have enough detail that you would be 
     EXTRA
         1.Set up a 404 with .get('*')
 
+  should have list of items
 ```
 
 ## Two - `server.js`
@@ -53,7 +54,7 @@ https://softwareengineering.stackexchange.com/questions/331049/why-do-req-params
 
 ## Three - `server.js`
 
-Look at lines `23` and `24`. Explain the methods used. How are they different? What are the usecases for each?
+Look at lines `26` and `24`. Explain the methods used. How are they different? What are the usecases for each?
 
 ```
 the GET method is used to request date from a specified source. Get ins't secure, as the info in query strings appears in the url.
@@ -110,15 +111,6 @@ Hompage.ejs:
     Line 12 includes the footer partial
 TodoInput.ejs
     line 1 tells us the form uses the POST method, meaning that it creates new data, and that it's action is /form-data. So that means on submission, it'll call the .post(/form-data) request.
-
-```
-
-## Nine - `styles.scss`
-
-What are lines `2` to `7` for this file? Where are these values being used? Take a look at `_homepage.scss` as well? What do you notice?
-
-```
-// Answer here
 
 ```
 
