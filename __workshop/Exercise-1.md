@@ -38,7 +38,7 @@ It is used to refine the data that is being passed to the 'req.body' object in o
 
 ## Three - `server.js`
 
-Look at lines `23` and `24`. Explain the methods used. How are they different? What are the usecases for each?
+Look at lines `26` and `24`. Explain the methods used. How are they different? What are the usecases for each?
 
 ```
 
@@ -96,22 +96,4 @@ Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? E
 2-4. Includes the form and submit button from the appropriate partial.
 5-11. Loops through the array of items provided by the user and creates <li> items for each item.
 12. Includes the footer partial.
-```
-
-## Nine - `styles.scss`
-
-What are lines `2` to `7` for this file? Where are these values being used? Take a look at `_homepage.scss` as well? What do you notice?
-
-```
-// Answer here
-
-```
-
-## Ten - `_homepage.scss`
-
-Line `16`. See if by searching the Sass documentation, you can determine what _exactly_ is going on here. That `#{}` notation very specific to this use-case. Why?
-
-```
-// Answer here
-
 ```
