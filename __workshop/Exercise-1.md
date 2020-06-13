@@ -53,8 +53,12 @@ We have a new module in there, `body-parser` that is required on line `4`. What 
 
 _The NPM site might be a good place to start. Feel free to provide links as relevant._
 
+Not requiered on this exercise, because we are not dealing with JSON. Also express handles JSON formatting
+
 ```
 // Answer here
+https://medium.com/@mmajdanski/express-body-parser-and-why-may-not-need-it-335803cd048c
+
 
 Tell body parser to extracts date from the form on the body element and add it to the body object on the request
 
