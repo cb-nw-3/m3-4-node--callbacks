@@ -47,6 +47,9 @@ _The NPM site might be a good place to start. Feel free to provide links as rele
 
   the line 26 also uses the package
     .use(bodyParser.json())
+
+  // makes the req.body available 
+  // transforms it into javascript object
 ```
 
 ## Three - `server.js`
