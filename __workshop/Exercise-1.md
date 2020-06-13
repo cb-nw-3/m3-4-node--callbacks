@@ -25,7 +25,7 @@ Only move on to the next question when you have enough detail that you would be 
         3.This lists needs to go over the array of items and for each (hehe .forEach) element in the list, create an li element that contains each item.
     let's get back to server.js
         1.Create a .post, we need this to match our form created on step on of the homepage.ejs so .post('/submitPOst')
-        2.In the same post method, we need to save what the user submited to a new variable, we can call it item. (need to look up body-parser)
+        2.In the same post method, we need to save what the user submited to a new variable, we can call it item.
         3.Push the item to the items array in step one.
         4.redirect to the main page and pass {items:items}
     EXTRA
@@ -68,7 +68,7 @@ You would GET in the case where you don't need info to be secured and to make qu
 Line `6`. That's new. What do you think it's for?
 
 ```
-THis is used to pluck out our handler fucntions from the .handlers file that was required. That way, we can call those functions in the appropriate requests.
+THis is used to pluck out our handler fucntions from the .handlers file that was required as they were exported as an object. That way, we can call those functions in the appropriate requests.
 
 ```
 
@@ -105,7 +105,7 @@ Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? E
 ```
 Hompage.ejs:
     Line 1: This include references to the header partial, meaning it places the html contents of the header.ejs file into our html.
-    line 3 This include references to the todoInput partial, meaning it places the html contents of the file into our html.
+    line 3 This include references to the todoInput partial, meaning it places the html contents of the file into our html.This is our form
     Line 7. This goes over each item of the items for each array.
     Line 8. It creates a li element for each item in the array and displays inside the li the item (which is a string)
     Line 12 includes the footer partial
