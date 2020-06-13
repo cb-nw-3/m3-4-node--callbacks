@@ -42,7 +42,7 @@ We have a new module in there, `body-parser` that is required on line `4`. What 
 _The NPM site might be a good place to start. Feel free to provide links as relevant._
 
 ```
-body-parser is a middleware that parses the date from incoming requests. In other words, when you have an incoming request(post or put) containing body information, the body-parser will take that date and organize it in various ways, dependint on which methods is used. In our case, in line 21, we use BodyParser.json(). That means that in this case, it will create a body object containing the parsed information from the original form that was submitted.We can then use req.body, as is the case in the handleFormDate function (line8). Here we save what was submitted to the form as an object and later push it to our items array.
+body-parser is a middleware that parses the date from incoming requests. In other words, when you have an incoming request(post or put) containing body information, the body-parser will take that date and organize it in various ways, depending on which methods is used. In our case, in line 21, we use BodyParser.json(). That means that in this case, it will create a body object containing the parsed information from the original form that was submitted.We can then use req.body, as is the case in the handleFormDate function (line8). Here we save what was submitted to the form as an object and later push it to our items array.
 
 sources: https://stackoverflow.com/questions/30915424/express-what-is-the-difference-between-req-query-and-req-body
 http://expressjs.com/en/resources/middleware/body-parser.html#:~:text=A%20new%20body%20object%20containing%20the%20parsed%20data%20is%20populated,(when%20extended%20is%20true%20).
