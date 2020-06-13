@@ -19,13 +19,6 @@ It could be using. npx express-generator
 
 2. Configure views = ejs, server name: server.js, port = 8000 address, static files, midleware
 
-server file should have this:
-
-const express = require('express');
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
-
-
 3. configure yarn.lock file  yarn init
 
 4. write the code related to the app
@@ -36,6 +29,19 @@ const morgan = require('morgan');
 
 5. FRONT-END
 Form with an input field and a submit button, submit use a post method to send the info to the server, creating a new item on the list
+
+server file should have this:
+
+const express = require('express');
+const bodyParser = require('body-parser');
+const morgan = require('morgan');
+
+//This was added on exercise review with Josh Comeau
+What happens when running the application:
+
+1. render de homepage.ejs
+2. Each time a new Item is added to the To Do List it send a POST status 302 the browser recieves the 302
+3. redict to home page / refreshing the new item
 
 ```
 
@@ -139,7 +145,7 @@ This is the homepage.ejs
 <%- include('../partials/header') %> ==>  imports the header from partials/header.ejs
 <div class='input-container'>  ==> creates a div with the class input-container
     <%- include('../partials/todoInput') %> ==> imports the todoInput from partials/todoInputs.ejs
-</div> ==> closes the div 
+</div> ==> closes the div
 <div class='content'> ==> open a new div class = content
     <ul class='todo-list'> ==> creates a ul with the class todo-list
         <% items.forEach(item => { %> => run a loop, for each element of items
@@ -151,10 +157,10 @@ This is the homepage.ejs
 
 this is the todoInputs,ejs
 <form method='POST' action='/form-data'>  ==> defines a form with post method and tell the browser to go to /form-data endpoint
-    <label for='item'>TODO Item</label> ==>  creates the label 
-    <input type='text' name='item' placeholder='Item Description' /> => creates and input type text and name item 
+    <label for='item'>TODO Item</label> ==>  creates the label
+    <input type='text' name='item' placeholder='Item Description' /> => creates and input type text and name item
     <button type='submit'>Submit</button>  ==> creates a button type submit
-</form> =>  close the form 
+</form> =>  close the form
 ```
 
 ## Nine - `styles.scss`
