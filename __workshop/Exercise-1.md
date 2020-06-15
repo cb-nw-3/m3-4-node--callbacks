@@ -14,10 +14,10 @@ Only move on to the next question when you have enough detail that you would be 
 
 ```
 // Answer here
-write out HTML partials in ejs, create page that utilizes them
+write out HTML partials in ejs, create homepage that utilizes them
 write one more partial -> TODO form
 .get /
-  render the html w/ ** the form-data **
+  render the html w/ ** the form-data ** (express().post('/form-data'))
 .use * to handle all non-existent URLs to default 404 page
   app should output list of items (to do list)
 
@@ -88,6 +88,8 @@ The `handle404` function is a more complex than we've seen thus far, what is the
 
 ```
 // Answer here
+The first part of the more complex 404 is the req.originalUrl which will show the user where the 404 came from i.e: ("Looks like we've got nothing at /...")
+The second part is for when a user makes a request through JSON, if the URL is invalid, it will show an error: "Not found". The third part, if nothing is returned for the first two if statements, then "Not found" is displayed as text.
 
 ```
 
