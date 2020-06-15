@@ -14,11 +14,13 @@ Only move on to the next question when you have enough detail that you would be 
 
 ```
 // Answer here
-get /
-  render the html
-  should have a form
+write out HTML partials in ejs, create homepage that utilizes them
+write one more partial -> TODO form
+.get /
+  render the html w/ ** the form-data ** (express().post('/form-data'))
+.use * to handle all non-existent URLs to default 404 page
+  app should output list of items (to do list)
 
-  should have list of items
 ```
 
 ## Two - `server.js`
@@ -31,6 +33,8 @@ _The NPM site might be a good place to start. Feel free to provide links as rele
 
 ```
 // Answer here
+In handlers.js - handlerFormData creates a { variable } (the todo item) that uses req.body, which is used for body-parser which is ultimately used to save the details.
+(If I am not mistaken, this is why the todo item that the user puts in is saved on the page even after clearing cache)
 
 ```
 
@@ -40,6 +44,9 @@ Look at lines `26` and `24`. Explain the methods used. How are they different? W
 
 ```
 // Answer here
+GET method is used to request data from a specific resource whereas
+POST is used to send data to a server
+https://www.w3schools.com/tags/ref_httpmethods.asp
 
 ```
 
@@ -50,6 +57,8 @@ Line `6`. That's new. What do you think it's for?
 ```
 // Answer here
 
+It requires the endpoints to use the functions provided in handlers.js so instead of writing the arrow functions in the .get(), they are imported from the handlers.js file
+
 ```
 
 ## Five - `handlers.js`
@@ -59,6 +68,8 @@ Explain line `1`. Where, why and how is `items` being used?
 ```
 // Answer here
 
+Items (todo items added by the user) are pushed to the array, that is generated onto the TODO list through handleFormData and the .post() method in servers.js.
+
 ```
 
 ## Six - `handlers.js`
@@ -67,6 +78,7 @@ Why is there `redirect` on line `11`;
 
 ```
 // Answer here
+After submiting an item into the todo list, the redirect will reload the homepage, which will have the updated todo list, and the input will be empty and ready for the next item.
 
 ```
 
@@ -76,6 +88,8 @@ The `handle404` function is a more complex than we've seen thus far, what is the
 
 ```
 // Answer here
+The first part of the more complex 404 is the req.originalUrl which will show the user where the 404 came from i.e: ("Looks like we've got nothing at /...")
+The second part is for when a user makes a request through JSON, if the URL is invalid, it will show an error: "Not found". The third part, if nothing is returned for the first two if statements, then "Not found" is displayed as text.
 
 ```
 
@@ -85,5 +99,12 @@ Take a look at `homepage.ejs` and `todoInput.ejs`. What is happening in there? E
 
 ```
 // Answer here
+The first part is using the <%- include %> for the header partial which generates the <!DOCTYPE> <html> <head> <body> tags to start the page
+
+The todoInput partial that is <%- include %> creates the form on the home page
+
+Back in the homepage.ejs a <ul> is created using a forEach() ran on the items to create a <li> per item in the list
+
+And the final part is the <%- include %> of the footer partial to close off the document
 
 ```
